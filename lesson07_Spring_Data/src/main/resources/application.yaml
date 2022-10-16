@@ -1,0 +1,37 @@
+server:
+  port: 8189
+  servlet:
+    context-path: /app
+# Конфигурируем спринговое приложение
+spring:
+# Когда вы используете какую-либо базу данных, то есть вы подключаете какой то модуль(стартер),
+# который ответственный за действия с БД, то у вас автоматом появляется спринговый Bean,
+# который называется "datasource". И задача этого бина - указать спринговому приложению,
+# куда ему подключаться (к какой БД, по какому URL, с каким пользователем и паролем).
+# И мы через .yaml файл можем сконфигурировать этот datasource.
+  datasource:
+# Имя драйвера
+    driver-class-name: org.h2.Driver
+# InMemoryDB в режиме совместимости и PostgreSQL
+#    url: jdbc:h2:file:.\filedb;MODE=PostgreSQL
+    url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
+    username: sa
+    password:
+# Настройка Java Persistence API - релаизации этой спецификации. В нашем случае это Hibernate.
+  jpa:
+# Показ запросов в консоли
+    show-sql: true
+    properties:
+      hibernate:
+# Чтобы Hibernate понимал в какой диалект использовать.
+        dialect: org.hibernate.dialect.H2Dialect
+# Активация консоли
+  h2:
+    console:
+      enabled: true
+      settings:
+# Сможем только из нашего бразуера к ней подключаться. Если обратиться другой web service =
+# подключение обрубит
+        web-allow-others: false
+
+
