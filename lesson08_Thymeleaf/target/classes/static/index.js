@@ -74,7 +74,6 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             // делаем null - чтобы затерлись параметры ввода в форме
             $scope.calcAdd = null;
         });
-
     }
 
 
