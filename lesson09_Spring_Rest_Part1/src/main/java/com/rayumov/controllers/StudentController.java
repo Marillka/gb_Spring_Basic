@@ -8,8 +8,6 @@ import com.rayumov.services.StudentService;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 /*
 Что такое Rest сервисы?
 Это Web сервисы, которые обрабатывают какие то данные и работают по определенному набору правил.
