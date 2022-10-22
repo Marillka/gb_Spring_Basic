@@ -5,6 +5,7 @@ import com.rayumov.exceptions.ResourceNotFoundException;
 import com.rayumov.services.ProductService;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -16,8 +17,14 @@ public class ProductController {
     }
 
     @GetMapping("/products")
-    public List<Product> getAllProducts() {
-        return productService.findAll();
+    public List<Product> startPage(
+            @RequestParam(name = "minFilter", defaultValue = "0") Integer minPrice,
+            @RequestParam(name = "maxFilter", required = false) Integer maxPrice
+    ) {
+        if (maxPrice == null) {
+            maxPrice = Integer.MAX_VALUE;
+        }
+        return productService.findProductsByCostBetween(minPrice, maxPrice);
     }
 
     @PostMapping("/products")

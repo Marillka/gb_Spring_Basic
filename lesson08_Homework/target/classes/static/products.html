@@ -16,11 +16,11 @@
 
 <div class="container" ng-controller="productController">
 
-    <h3>Фильте</h3>
-    <form novalidate ng-submit="findProductsBetween()">
-        <input class="form-control" type="number" placeholder="min" ng-model="productCost.min"/>
-        <p></p>
-        <input class="form-control" type="number" placeholder="max" ng-model="productCost.max"/>
+    <form  ng-submit="loadProducts()">
+        <lable>Минимальная цена</lable>
+        <input class="form-control" type="number" id="minFilter" placeholder="Минимум" ng-model="filter.minFilter"/>
+        <lable>Максимальная цена</lable>
+        <input class="form-control" type="number" id="maxFilter" placeholder="Максимум" ng-model="filter.maxFilter"/>
         <p></p>
         <button type="submit" class="btn btn-primary">Найти</button>
     </form>

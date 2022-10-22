@@ -3,11 +3,20 @@ angular.module('app', []).controller('productController', function ($scope, $htt
 
 
     $scope.loadProducts = function () {
-        $http.get(contextPath + '/products')
-            .then(function (response) {
-                $scope.ProductsList = response.data;
-            });
-    };
+        // console.log($scope.filter)
+        $http({
+            url: contextPath + '/products',
+            method: 'get',
+            params: {
+                minPrice: $scope.filter ? $scope.filter.minFilter : null,
+                maxPrice: $scope.filter ? $scope.filter.maxFilter : null
+            }
+        }).then(function (response) {
+            console.log(response.data)
+            $scope.ProductsList = response.data;
+        });
+    }
+
 
     $scope.deleteProduct = function (productId) {
         $http.get(contextPath + '/products/delete/' + productId)
@@ -39,23 +48,25 @@ angular.module('app', []).controller('productController', function ($scope, $htt
             });
     }
 
-    $scope.findProductsBetween = function () {
-        console.log($scope.productCost);
-        $http({
-            url: contextPath + '/products/cost_between',
-            method: 'post',
-            params: {
-                min: $scope.productCost.min,
-                max: $scope.productCost.max
-            }
-        }).then(function (response) {
-                console.log(response.data)
-                $scope.ProductsList = response.data;
-            });
-    }
-
-
-
+    // $scope.findProductsBetween = function () {
+    //     console.log($scope.productCost);
+    //     if ($scope.productCost.min === null && $scope.productCost.max === null) {
+    //         $scope.loadProducts();
+    //     } else {
+    //         $http({
+    //             url: contextPath + '/products/cost_between',
+    //             method: 'post',
+    //             params: {
+    //                 min: $scope.productCost.min,
+    //                 max: $scope.productCost.max
+    //             }
+    //         }).then(function (response) {
+    //             console.log(response.data)
+    //             $scope.ProductsList = response.data;
+    //         });
+    //     }
+    // }
 
     $scope.loadProducts();
+
 });
