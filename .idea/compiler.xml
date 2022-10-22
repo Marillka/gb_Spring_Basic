@@ -4,12 +4,7 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/untitled1/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/lesson07_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/lesson08_Themeleaf/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/lesson08_Thymeleaf/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/lesson08_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson09_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -17,23 +12,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lesson07_Spring_Data" />
-        <module name="gb_Spring_Basic" />
-        <module name="lesson07_Homework" />
-        <module name="lesson08_Homework" />
+        <module name="lesson09_Homework" />
         <module name="lesson08_Thymeleaf" />
         <module name="lesson09_Spring_Rest_Part1" />
+        <module name="gb_Spring_Basic" />
+        <module name="lesson08_Homework" />
+        <module name="." />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="18">
-      <module name="untitled" target="18" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="lesson07_Homework" options="-parameters" />
+      <module name="." options="-parameters" />
       <module name="lesson07_Spring_Data" options="-parameters" />
       <module name="lesson08_Homework" options="-parameters" />
       <module name="lesson08_Thymeleaf" options="-parameters" />
+      <module name="lesson09_Homework" options="-parameters" />
       <module name="lesson09_Spring_Rest_Part1" options="-parameters" />
     </option>
   </component>
