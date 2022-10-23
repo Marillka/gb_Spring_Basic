@@ -22,7 +22,7 @@ public class ProductController {
             @RequestParam(name = "p", defaultValue = "1") Integer page,
             @RequestParam(name = "max_cost", required = false) Integer minCost,
             @RequestParam(name = "min_cost", required = false) Integer maxCost,
-            @RequestParam(name = "name_part", required = false) String namePart
+            @RequestParam(name = "titlePart", required = false) String namePart
     ) {
         if (page < 1) {
             page = 1;
