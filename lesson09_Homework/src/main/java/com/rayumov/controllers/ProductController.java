@@ -2,10 +2,11 @@ package com.rayumov.controllers;
 
 import com.rayumov.dto.ProductDto;
 import com.rayumov.entities.Product;
-import com.rayumov.exceptions.ResourceNotFoundException;
 import com.rayumov.services.ProductService;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/products")
@@ -32,20 +33,25 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ProductDto getProductById(@PathVariable Long id) {
-        return productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product not found, id: " + id));
+    public Optional<ProductDto> getProductById(@PathVariable Long id) {
+        Optional<Product> optionalProduct = productService.findById(id);
+        Product product = optionalProduct.get();
+        Optional<ProductDto> ProductDto = Optional.of(new ProductDto(product));
+        return ProductDto;
     }
 
     @PostMapping()
     public ProductDto saveNewProduct(@RequestBody ProductDto product) {
         product.setId(null);
-        return productService.save(new Product(product.getId(), product.getName(), product.getCost()));
+        Product newProduct = productService.save(new Product(product));
+        return new ProductDto(newProduct);
 
     }
 
     @PutMapping
-    public ProductDto updateProduct(@RequestBody Product product) {
-        return productService.save(product);
+    public ProductDto updateProduct(@RequestBody ProductDto product) {
+        Product updatedProduct = productService.save(new Product(product));
+        return new ProductDto(updatedProduct);
     }
 
     @DeleteMapping("/{id}")

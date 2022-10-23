@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<div class="container" ng-controller="indexController">
+
+    <form novalidate ng-submit="loadProducts()">
+        <div class="form-floating" input-group-sm>
+            <input type="text" class="form-control" id="filterTitle" placeholder="" ng-model="filter.title_part">
+            <label for="filterTitle">Название продукта</label>
+        </div>
+        <p></p>
+        <div class="form-floating" input-group-sm>
+            <input type="number" class="form-control" id="filterMinPrice" placeholder="" ng-model="filter.min_price">
+            <label for="filterMinPrice">Минимальная стоимость</label>
+        </div>
+        <p></p>
+        <div class="form-floating" input-group-sm>
+            <input type="number" class="form-control" id="filterMaxPrice" placeholder="" ng-model="filter.max_price">
+            <label for="filterMaxPrice">Максимальноая стоимость</label>
+        </div>
+        <p></p>
+        <button class="btn btn-outline-warning btn-sn" style="width: 100%;" type="submit">Применить</button>
+    </form>
+
+    <h3>Каталог товаров</h3>
+    <table class="table table-hover" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>ID</td>
+            <td>Название</td>
+            <td>Цена</td>
+        </tr>
+        <tbody>
+        <tr ng-repeat="p in ProductsPage.content">
+            <td>{{p.id}}</td>
+            <td>{{p.title}}</td>
+            <td>{{p.price}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>

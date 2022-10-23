@@ -1,5 +1,7 @@
 package com.rayumov.entities;
 
+import com.rayumov.dto.ProductDto;
+
 import javax.persistence.*;
 
 @Entity
@@ -41,9 +43,9 @@ public class Product {
     public Product() {
     }
 
-    public Product(Long id, String name, Integer cost) {
-        this.id = id;
-        this.name = name;
-        this.cost = cost;
+    public Product(ProductDto productDto) {
+        this.id = productDto.getId();
+        this.name = productDto.getName();
+        this.cost = productDto.getCost();
     }
 }

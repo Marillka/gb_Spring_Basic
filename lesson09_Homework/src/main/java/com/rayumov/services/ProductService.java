@@ -33,18 +33,15 @@ public class ProductService {
         return productRepository.findAll(specification, PageRequest.of(page - 1, 10));
     }
 
-    public Optional<ProductDto> findById(Long id) {
-        return productRepository.findById(id).map(
-                s -> new ProductDto(s)
-        );
+    public Optional<Product> findById(Long id) {
+        return productRepository.findById(id);
     }
 
     public void deleteById(Long id) {
         productRepository.deleteById(id);
     }
 
-    public ProductDto save(Product product) {
-        Product newProduct = productRepository.save(product);
-        return new ProductDto(newProduct);
+    public Product save(Product product) {
+        return productRepository.save(product);
     }
 }
