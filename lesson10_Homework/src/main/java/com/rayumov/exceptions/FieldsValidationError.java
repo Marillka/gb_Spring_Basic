@@ -5,12 +5,13 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@NoArgsConstructor
 @Data
+@NoArgsConstructor
 public class FieldsValidationError {
     private List<String> errorFieldsMessages;
 
     public FieldsValidationError(List<String> errorFieldsMessages) {
         this.errorFieldsMessages = errorFieldsMessages;
     }
+
 }
