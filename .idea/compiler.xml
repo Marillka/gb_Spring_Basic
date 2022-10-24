@@ -6,6 +6,7 @@
       <directory url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/lesson09_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/lesson10_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson11_Spring_Security/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -14,6 +15,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lesson07_Spring_Data" />
+        <module name="lesson11_Spring_Security" />
         <module name="lesson09_Homework" />
         <module name="lesson08_Thymeleaf" />
         <module name="lesson10_Homework" />
@@ -35,6 +37,7 @@
       <module name="lesson09_Spring_Rest_Part1" options="-parameters" />
       <module name="lesson10_Homework" options="-parameters" />
       <module name="lesson10_Spring_Rest_Part2" options="-parameters" />
+      <module name="lesson11_Spring_Security" options="-parameters" />
     </option>
   </component>
 </project>
