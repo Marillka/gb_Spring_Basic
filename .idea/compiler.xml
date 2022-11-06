@@ -4,20 +4,70 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson09_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson10_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson11_Spring_Security/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson11_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson12_Practice/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson01_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson02_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson03_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson04_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson05_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/lesson06_Homework/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ZZZZtoDelete/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lesson07_Spring_Data" />
+        <module name="lesson11_Homework" />
+        <module name="lesson08_Thymeleaf" />
+        <module name="lesson01_Homework" />
+        <module name="lesson12_Practice" />
+        <module name="lesson09_Spring_Rest_Part1" />
+        <module name="lesson11_webinar_Spring_Security" />
         <module name="gb_Spring_Basic" />
+        <module name="lesson05_Homework" />
+        <module name="lesson02_Homework" />
+        <module name="lesson06_Homework" />
+        <module name="lesson07_Spring_Data" />
+        <module name="lesson11_Spring_Security" />
+        <module name="lesson03_Homework" />
+        <module name="lesson09_Homework" />
+        <module name="lesson10_Homework" />
+        <module name="lesson10_Spring_Rest_Part2" />
+        <module name="lesson07_Homework" />
+        <module name="lesson08_Homework" />
+        <module name="lesson04_Homework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lesson06_Java_Persistance_Api_Hibernate_Part2" target="1.5" />
+      <module name="ZZZZtoDelete" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ZZZZtoDelete" options="-parameters" />
+      <module name="lesson03_Homework" options="-parameters" />
+      <module name="lesson04_Homework" options="-parameters" />
+      <module name="lesson06_Homework" options="-parameters" />
+      <module name="lesson07_Homework" options="-parameters" />
       <module name="lesson07_Spring_Data" options="-parameters" />
+      <module name="lesson08_Homework" options="-parameters" />
+      <module name="lesson08_Thymeleaf" options="-parameters" />
+      <module name="lesson09_Homework" options="-parameters" />
+      <module name="lesson09_Spring_Rest_Part1" options="-parameters" />
+      <module name="lesson10_Homework" options="-parameters" />
+      <module name="lesson10_Spring_Rest_Part2" options="-parameters" />
+      <module name="lesson11_Homework" options="-parameters" />
+      <module name="lesson11_Spring_Security" options="-parameters" />
+      <module name="lesson11_webinar_Spring_Security" options="-parameters" />
+      <module name="lesson12_Practice" options="-parameters" />
     </option>
   </component>
 </project>

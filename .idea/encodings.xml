@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ZZZZtoDelete/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZZZZtoDelete/src/main/resources" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson01_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson01_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson02_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson02_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson03_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson04_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson06_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson06_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson07_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson07_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson07_Homework/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson07_Homework/src/main/resources/db/migration/V1__init.sql" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources/db/migration" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/lesson07_Spring_Data/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson08_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson08_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson08_Homework/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson08_Thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson08_Thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson08_Thymeleaf/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Homework/src/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/java/src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/java/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/java/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/java/src/main/resources/db/migration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson09_Spring_Rest_Part1/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson10_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson10_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson10_Homework/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson10_Spring_Rest_Part2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson10_Spring_Rest_Part2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson10_Spring_Rest_Part2/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson11_Homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson11_Homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson11_Homework/src/main/resources/db.migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson11_Spring_Security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson11_Spring_Security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson11_Spring_Security/src/main/resources/db/migration" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/lesson11_webinar_Spring_Security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson11_webinar_Spring_Security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson12_Practice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson12_Practice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lesson12_Practice/src/main/resources/db/migration" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/untitled1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/untitled1/src/main/resources" charset="UTF-8" />
   </component>
 </project>

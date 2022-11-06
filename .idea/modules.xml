@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gb_Spring_Basic.iml" filepath="$PROJECT_DIR$/gb_Spring_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2.iml" filepath="$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2.iml" />
     </modules>
   </component>
 </project>
