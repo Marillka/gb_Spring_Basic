@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/lesson02_Homework" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -15,6 +18,16 @@
         <option value="$PROJECT_DIR$/lesson10_Spring_Rest_Part2/pom.xml" />
         <option value="$PROJECT_DIR$/lesson10_Homework/pom.xml" />
         <option value="$PROJECT_DIR$/lesson11_Spring_Security/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson11_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson11_webinar_Spring_Security/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson12_Practice/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson06_Java_Persistance_Api_Hibernate_Part2/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson01_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson02_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson03_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson04_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson05_Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/lesson06_Homework/pom.xml" />
       </list>
     </option>
   </component>

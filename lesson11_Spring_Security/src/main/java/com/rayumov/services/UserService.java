@@ -38,7 +38,7 @@ public class UserService implements UserDetailsService {
         // То есть если выпадает Exception - то пользователю должно прилететь, что такой логин и пароль не найдены.
         User user = findByUsername(username).orElseThrow(() -> new UsernameNotFoundException(String.format("User '%s' not found", username)));
         // Юзера нашли, теперь возвращаем спрингового юзера
-        // mapRolesToAuthorities - здесь от нас ждут
+        // mapRolesToAuthorities - здесь от нас ждут роли пользователя
         return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), mapRolesToAuthorities(user.getRoles()));
     }
 
